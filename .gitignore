@@ -2,4 +2,5 @@ env/
 __pycache__/
 *.pyc
 .env
-data/*.csv  # Ignore big CSV files in the data directory
+.DS_Store
+data/walmart.csv  # Ignore big CSV files in the data directory
