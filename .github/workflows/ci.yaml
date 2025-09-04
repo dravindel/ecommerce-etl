@@ -1,0 +1,2 @@
+cat > .github/workflows/cd.yaml
+:wq
