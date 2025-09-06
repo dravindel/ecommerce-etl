@@ -4,3 +4,5 @@ __pycache__/
 .env
 .DS_Store
 data/walmart.csv  # Ignore big CSV files in the data directory
+venv/
+.python-version
