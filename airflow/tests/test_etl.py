@@ -1,12 +1,11 @@
-import pytest
-import pandas as pd
-from unittest.mock import MagicMock
 import sys
 import os
+import pandas as pd
+import pytest
+from unittest.mock import MagicMock
+from etl.transform import transform
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../airflow/dags/utils')))
-
-from etl_functions import transform
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 @pytest.fixture
 def mock_kwargs():
