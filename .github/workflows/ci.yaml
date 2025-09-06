@@ -32,5 +32,6 @@ jobs:
 
       - name: Run tests
         run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/airflow
           pip install pytest
           pytest airflow/tests/ --maxfail=1 --disable-warnings -q
