@@ -116,7 +116,7 @@ To enable CD, add the following secrets in your GitHub repo:
 
 ---
 
-##  Author
-**Dravindel**  
+## Author
+**👤 [Dravindel](https://www.linkedin.com/in/your-profile)**  
 Portfolio project for **Data Engineering interviews demonstrations**.
 
