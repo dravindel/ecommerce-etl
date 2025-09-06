@@ -33,4 +33,4 @@ jobs:
       - name: Run tests
         run: |
           pip install pytest
-          pytest tests/ --maxfail=1 --disable-warnings -q
+          pytest airflow/tests/ --maxfail=1 --disable-warnings -q
