@@ -9,7 +9,7 @@ The pipeline is designed as a portfolio project to demonstrate practical **data 
 - Persisting data in **PostgreSQL**  
 - Containerizing with **Docker Compose**  
 - Adding CI/CD automation with **GitHub Actions**  
-- (Optional) Visualizing metrics with **Grafana**  
+- Visualizing metrics with **Grafana**  
 
 ---
 
@@ -66,7 +66,7 @@ flowchart LR
 - **Docker / Docker Compose** – containerization  
 - **GitHub Actions** – CI/CD  
 - **Pytest** – testing  
-- **Grafana** – visualization  (optional)
+- **Grafana** – visualization
 
 ---
 
