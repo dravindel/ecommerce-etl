@@ -13,6 +13,22 @@ The pipeline is designed as a portfolio project to demonstrate practical **data 
 
 ---
 
+## Architecture
+
+**Data Flow:**
+
+```mermaid
+flowchart LR
+    RAW[Raw Layer] --> STG[Staging Layer]
+    STG --> PROCESSED[Processed Layer]
+    PROCESSED --> METRICS[Metrics/KPIs]
+```
+- Raw Layer: Stores unprocessed, source data.
+- Staging Layer (optional): Cleans, deduplicates, and enriches data for analytics. Can be implemented as an intermediate table (stg.orders) or handled in Python/SQL transformations before the processed layer.
+- Processed Layer: Final business-ready tables, including calculated metrics and KPIs. This layer is ready for analytics, reporting, and dashboard consumption.
+- Metrics Layer:Aggregated KPIs for dashboards and reporting. Typically stored in a separate table or materialized view to optimize queries for visualization tools like Grafana.
+
+
 ##  Project Structure
 ```
 ├── airflow/                 # Airflow components
