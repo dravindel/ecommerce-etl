@@ -31,10 +31,15 @@ The pipeline is designed as a portfolio project to demonstrate practical **data 
 ├── db/                      # PostgreSQL init scripts
 │   └── init.sql
 ├── grafana/                 # Grafana provisioning (optional)
+├── docs/                    # Documentation & demos
+│   └── screenshots/         # UI results
+│       ├── airflow_ui.png
+│       └── grafana_dashboard.png
 ├── docker-compose.yml       # Service orchestration
 ├── Dockerfile               # Custom Airflow image
 ├── requirements.txt         # Python dependencies
 └── README.md
+
 ```
 
 ---
@@ -113,6 +118,16 @@ pytest airflow/tests/ --disable-warnings -q
 To enable CD, add the following secrets in your GitHub repo:
 - `DOCKER_USERNAME`  
 - `DOCKER_PASSWORD`  
+
+---
+
+## Demo illustration
+
+### Airflow DAG
+![Airflow DAG](docs/screenshots/airflow_ui.png)
+
+### Grafana Dashboard
+![Grafana Dashboard](docs/screenshots/grafana_dashboard.png)
 
 ---
 
