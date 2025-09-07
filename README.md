@@ -49,12 +49,11 @@ walmart-etl-pipeline/
 │       ├── data_quality.py
 │       └── test_etl.py
 ├── sql/                             # SQL scripts
-│   ├── raw_to_stg.sql               # Raw → Staging load
 │   ├── transform.sql                # Transformations for processed layer
 │   └── metrics.sql                  # KPI / aggregate calculations
 ├── db/                              # Database initialization scripts
 │   └── init.sql
-├── grafana/                         # Dashboards setup (optional)
+├── grafana/                         # Dashboards setup
 ├── docs/                            # Documentation and demos
 │   └── screenshots/
 │       ├── airflow_ui.png
