@@ -52,7 +52,6 @@ def load_raw(ti=None, **kwargs):
     logger.info(f"Loaded {len(df)} rows into raw_walmart")
 
 def load_processed(ti=None, **kwargs):
-    """Загрузка трансформированных данных в таблицу processed_walmart"""
     if not ti:
         raise AirflowException("TaskInstance is required for load_processed")
 
