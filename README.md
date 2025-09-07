@@ -31,30 +31,38 @@ flowchart LR
 
 ##  Project Structure
 ```
-├── airflow/                 # Airflow components
-│   ├── dags/                # DAG definitions
+walmart-etl-pipeline/
+├── airflow/                         # Airflow components
+│   ├── dags/                        # DAG definitions
+│   │   ├── __pycache__/             # Compiled Python files
 │   │   └── dag_walmart.py
-│   ├── etl/                 # ETL modules
+│   ├── etl/                         # Python ETL modules
+│   │   ├── __init__.py
 │   │   ├── extract.py
 │   │   ├── transform.py
 │   │   ├── load.py
 │   │   ├── metrics.py
 │   │   └── quality.py
-│   ├── sql/                 # SQL scripts for transformations & metrics
-│   ├── data/                # Source dataset
+│   ├── data/                        # Source CSV files
 │   │   └── walmart.csv
-│   └── tests/               # Unit tests
-├── db/                      # PostgreSQL init scripts
+│   └── tests/                       # Unit and integration tests
+│       ├── data_quality.py
+│       └── test_etl.py
+├── sql/                             # SQL scripts
+│   ├── raw_to_stg.sql               # Raw → Staging load
+│   ├── transform.sql                # Transformations for processed layer
+│   └── metrics.sql                  # KPI / aggregate calculations
+├── db/                              # Database initialization scripts
 │   └── init.sql
-├── grafana/                 # Grafana provisioning (optional)
-├── docs/                    # Documentation & demos
-│   └── screenshots/         # UI results
+├── grafana/                         # Dashboards setup (optional)
+├── docs/                            # Documentation and demos
+│   └── screenshots/
 │       ├── airflow_ui.png
 │       └── grafana_dashboard.png
-├── docker-compose.yml       # Service orchestration
-├── Dockerfile               # Custom Airflow image
-├── requirements.txt         # Python dependencies
-└── README.md
+├── requirements-airflow.txt         # Python dependencies for Airflow
+├── docker-compose.yml               # Service orchestration
+├── Dockerfile                       # Custom Airflow image
+└── README.md                        # Project documentation
 
 ```
 
