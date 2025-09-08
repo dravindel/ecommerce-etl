@@ -34,7 +34,7 @@ flowchart LR
 ## Input Data
 
 The pipeline processes aggregated sales data from walmart.csv with the following structure:
-
+```
 Store: INTEGER (Store ID)
 Date: DATETIME (Date of sales data, format YYYY-MM-DD)
 Weekly_Sales: FLOAT (Total weekly sales for the store)
@@ -43,7 +43,7 @@ Temperature: FLOAT (Average temperature in the region)
 Fuel_Price: FLOAT (Average fuel price)
 CPI: FLOAT (Consumer Price Index)
 Unemployment: FLOAT (Unemployment rate)
-
+```
 ---
 
 ##  Project Structure
