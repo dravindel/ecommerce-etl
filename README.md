@@ -33,7 +33,7 @@ flowchart LR
 
 ## Input Data
 
-The pipeline processes aggregated sales data from walmart.csv with the following structure:
+The pipeline processes aggregated sales data from [walmart.csv](https://www.kaggle.com/datasets/yasserh/walmart-dataset?select=Walmart.csv) with the following structure:
 ```
 Store: INTEGER (Store ID)
 Date: DATETIME (Date of sales data, format YYYY-MM-DD)
